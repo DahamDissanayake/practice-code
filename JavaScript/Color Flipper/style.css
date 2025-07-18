@@ -1,0 +1,37 @@
+
+
+body{
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover {
+    opacity: 0.8;
+}
+.container{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#btn-red {
+    background-color: red;
+    color: white;
+}
+#btn-blue {
+    background-color: blue;
+    color: white;
+}
+#btn-green {
+    background-color: green;
+    color: white;
+}
+#btn-random {
+    background-color: gray;
+    color: white;
+}
