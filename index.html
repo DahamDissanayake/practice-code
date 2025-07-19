@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Codes by Daham Dissanayake</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #111;
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 2px solid #333;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #1a1a1a;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #333;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 0.5rem 1rem;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #000;
+            background-color: #fff;
+            border-color: #fff;
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 0;
+            border-bottom: 1px solid #222;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Project Cards */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background-color: #111;
+            border: 1px solid #333;
+            padding: 2rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            border-color: #fff;
+            transform: translateY(-5px);
+        }
+
+        .project-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .project-description {
+            color: #ccc;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+        }
+
+        .project-button {
+            background-color: #000;
+            color: #fff;
+            border: 2px solid #fff;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .project-button:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            text-align: center;
+            padding: 2rem 0;
+            color: #666;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Practice Codes by DAMA</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#javascript">JavaScript</a></li>
+                <li><a href="#python">Python</a></li>
+                <li><a href="#java">Java</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="javascript">
+            <div class="container">
+                <h2 class="section-title">JavaScript Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3 class="project-name">Color Flipper</h3>
+                        <p class="project-description">
+                            Task: Create a simple web page that changes its background color when a button is clicked.
+                        </p>
+                        <p class="project-description">
+                            Technologies to Use: HTML, CSS, and JavaScript.
+                        </p>
+                            
+                        <a href="/JavaScript/Color Flipper/ColorFlipper.html" target="_blank" class="project-button">View Project</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3 class="project-name">Upcoming</h3>
+                        <p class="project-description">
+                            Task: ...
+                        </p>
+                        <p class="project-description">
+                            Technologies to Use: ...
+                        </p>
+                            
+                        <a href="#" target="_blank" class="project-button">View Project</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3 class="project-name">Upcoming</h3>
+                        <p class="project-description">
+                            Task: ...
+                        </p>
+                        <p class="project-description">
+                            Technologies to Use: ...
+                        </p>
+                            
+                        <a href="#" target="_blank" class="project-button">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="python">
+            <div class="container">
+                <h2 class="section-title">Python Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3 class="project-name">Upcoming</h3>
+                        <p class="project-description">
+                            Task: ...
+                        </p>
+                        <p class="project-description">
+                            Technologies to Use: ...
+                        </p>
+                            
+                        <a href="#" target="_blank" class="project-button">View Project</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3 class="project-name">Upcoming</h3>
+                        <p class="project-description">
+                            Task: ...
+                        </p>
+                        <p class="project-description">
+                            Technologies to Use: ...
+                        </p>
+                            
+                        <a href="#" target="_blank" class="project-button">View Project</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3 class="project-name">Upcoming</h3>
+                        <p class="project-description">
+                            Task: ...
+                        </p>
+                        <p class="project-description">
+                            Technologies to Use: ...
+                        </p>
+                            
+                        <a href="#" target="_blank" class="project-button">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="java">
+            <div class="container">
+                <h2 class="section-title">Java Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3 class="project-name">Upcoming</h3>
+                        <p class="project-description">
+                            Task: ...
+                        </p>
+                        <p class="project-description">
+                            Technologies to Use: ...
+                        </p>
+                            
+                        <a href="#" target="_blank" class="project-button">View Project</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3 class="project-name">Upcoming</h3>
+                        <p class="project-description">
+                            Task: ...
+                        </p>
+                        <p class="project-description">
+                            Technologies to Use: ...
+                        </p>
+                            
+                        <a href="#" target="_blank" class="project-button">View Project</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3 class="project-name">Upcoming</h3>
+                        <p class="project-description">
+                            Task: ...
+                        </p>
+                        <p class="project-description">
+                            Technologies to Use: ...
+                        </p>
+                            
+                        <a href="#" target="_blank" class="project-button">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Daham Dissanayake. All practice projects for learning purposes.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add active state to navigation based on scroll position
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav a');
+
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.style.backgroundColor = '';
+                link.style.color = '#fff';
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.style.backgroundColor = '#fff';
+                    link.style.color = '#000';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
