@@ -1,0 +1,4 @@
+Task:
+Create a simple web page that takes an input word and checks if it is a palindrome.
+
+Technologies to Use: HTML and JavaScript.
